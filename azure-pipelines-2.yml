@@ -96,5 +96,6 @@ stages:
               appName: $(webAppName)
               package: $(Pipeline.Workspace)/drop/$(Build.BuildId).zip
           - task: owaspzap@1
-            inputs:azureSubscription: $(azureServiceConnectionId)
-            appName: $(webAppName)
+            inputs:
+              azureSubscription: $(azureServiceConnectionId)
+              appName: $(webAppName)
