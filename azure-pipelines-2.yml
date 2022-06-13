@@ -31,9 +31,9 @@ stages:
   jobs:
   - job: BuildJob
     pool: 
-      name: Default
+      name: flask
       demands:
-       - agent.name -equals Agentname py1
+       - agent.name -equals Agentname flask
 
     steps:
     - task: UsePythonVersion@0
