@@ -14,7 +14,7 @@ variables:
   webAppName: 'Deapp'
 
   # Agent VM image name
-  vmImageName: 'py_001'
+  vmImageName: 'py01'
 
   # Environment name
   environmentName: 'Deapp'
