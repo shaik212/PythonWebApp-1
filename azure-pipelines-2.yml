@@ -14,7 +14,7 @@ variables:
   webAppName: 'Deapp'
 
   # Agent VM image name
-  vmImageName: 'ubuntu-latest'
+  vmImageName: 'py_001'
 
   # Environment name
   environmentName: 'Deapp'
