@@ -30,10 +30,7 @@ stages:
   displayName: Build stage
   jobs:
   - job: BuildJob
-    pool: 
-      name: flask
-      demands:
-       - agent.name -equals Agentname flask
+    pool: flask
 
     steps:
     - task: UsePythonVersion@0
