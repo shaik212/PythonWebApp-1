@@ -80,7 +80,9 @@ stages:
   jobs:
   - deployment: DeploymentJob
     pool:
-      vmImage: $(vmImageName)
+      name: flask
+      demands:
+       - agent.name -equals Agentname flask
     environment: $(environmentName)
     strategy:
       runOnce:
