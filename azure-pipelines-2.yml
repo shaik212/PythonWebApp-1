@@ -31,7 +31,13 @@ stages:
   jobs:
   - job: BuildJob
     pool: flask
-
+    strategy:
+     matrix:
+       python36:
+         python.version: '3.6'
+       python37:
+         python.version: '3.7'
+     maxParallel: 2
     steps:
     - task: UsePythonVersion@0
       inputs:
